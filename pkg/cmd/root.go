@@ -39,7 +39,7 @@ func init() {
 
 	// Get the root command properties and bind the config property in YAML definition
 	rootProps := RootCmd.GetProperties()
-	rootProps.AddStringProperty("gateway.logFile", "./logs/traffic.log", "Sample log file with traffic event from gateway")
+	rootProps.AddStringProperty("gateway.logFile", "./events/traffic.log", "Sample log file with traffic event from gateway")
 }
 
 // Callback that agent will call to process the execution
